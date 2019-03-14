@@ -172,7 +172,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Height="60">
-            <My:IconButton Width="60" Height="20" Margin="0 0 5 0" Foreground="Black" Background="#F0F4F7" IsEnabled="{Binding IsStartEnable,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+            <My:IconButton Width="60" Height="20" Margin="0 0 5 0" Background="Goldenrod" IsEnabled="{Binding IsStartEnable,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                                   Content="文件" CornerRadius="5" MouseOverBackground="#DA4453" ImagePath="/ZdfFlatUI.Test;component/Icons/preview_hover.png" ImageSize="16"
                                   PressedBackground="#CFCFD0"/>
         </StackPanel>
