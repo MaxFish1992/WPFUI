@@ -1,12 +1,14 @@
-﻿<UserControl x:Class="ZdfFlatUI.Test.UITest.UCTTabControlTest"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ZdfFlatUI.Test.UITest"
-             xmlns:WPF.UI="clr-namespace:ZdfFlatUI;assembly=WPF.UI"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="600">
+﻿<UserControl
+    x:Class="ZdfFlatUI.Test.UITest.UCTTabControlTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:WPF.UI="clr-namespace:ZdfFlatUI;assembly=WPF.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ZdfFlatUI.Test.UITest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="600"
+    mc:Ignorable="d">
     <UserControl.Resources>
         <PathGeometry x:Key="MacOS" Figures="M791.487729 544.095473c-1.279999-129.695874 105.759898-191.871814 110.527893-194.975811-60.159942-88.031915-153.855851-100.063903-187.231819-101.471902-79.743923-8.063992-155.583849 46.943955-196.06381 46.943955-40.351961 0-102.8159-45.759956-168.959836-44.543957-86.911916 1.279999-167.071838 50.527951-211.807795 128.383876-90.303913 156.703848-23.135978 388.831623 64.895937 515.9355 43.007958 62.20794 94.303909 132.063872 161.631843 129.567874 64.831937-2.591997 89.375913-41.951959 167.743837-41.951959s100.415903 41.951959 169.055836 40.671961c69.759932-1.311999 113.98389-63.391939 156.703848-125.791878 49.375952-72.15993 69.727932-142.047862 70.911931-145.631859-1.535999-0.703999-136.063868-52.223949-137.407867-207.135799zM662.559854 163.519842c35.743965-43.359958 59.871942-103.5199 53.279948-163.519842-51.48795 2.111998-113.88789 34.303967-150.815854 77.535925-33.151968 38.367963-62.14394 99.615903-54.367947 158.431847 57.471944 4.479996 116.127888-29.215972 151.903853-72.44793z" />
         <PathGeometry x:Key="Windows" Figures="M437 567l0 325.5-341-47 0-278.5 341 0zm0-371.5l0 329.5-341 0 0-282.5zm491 371.5l0 393-453.5-62.5 0-330.5 453.5 0zm0-439l0 397-453.5 0 0-334.5z" />
@@ -17,85 +19,137 @@
         <WPF.UI:ZTabControl Margin="10">
             <TabItem Header="历史警情">
                 <Border>
-                    <TextBlock Text="TabItem1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem1" />
                 </Border>
             </TabItem>
             <TabItem Header="力量调度">
                 <Grid>
                     <ListBox x:Name="lst2" BorderBrush="Transparent" />
-                    <Border x:Name="bd" Background="#A0000000" Visibility="Collapsed">
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   Text="正在加载中，请稍后..." Foreground="White" FontSize="20"/>
+                    <Border
+                        x:Name="bd"
+                        Background="#A0000000"
+                        Visibility="Collapsed">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="20"
+                            Foreground="White"
+                            Text="正在加载中，请稍后..." />
                     </Border>
                 </Grid>
             </TabItem>
             <TabItem Header="暂存警情">
                 <Border>
-                    <TextBlock Text="TabItem3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem3" />
                 </Border>
             </TabItem>
             <TabItem Header="历史警情">
                 <Border>
-                    <TextBlock Text="TabItem1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem1" />
                 </Border>
             </TabItem>
             <TabItem Header="力量调度">
                 <Border>
-                    <TextBlock Text="TabItem2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem2" />
                 </Border>
             </TabItem>
             <TabItem Header="暂存警情">
                 <Border>
-                    <TextBlock Text="TabItem3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem3" />
                 </Border>
             </TabItem>
         </WPF.UI:ZTabControl>
 
         <WPF.UI:ZTabControl Margin="10" Type="Card">
             <WPF.UI:ZTabControl.HeaderContent>
-                <WPF.UI:FlatButton Content="增加" Type="ghost" Width="50" Height="25" />
+                <WPF.UI:FlatButton
+                    Width="50"
+                    Height="25"
+                    Content="增加"
+                    Type="ghost" />
             </WPF.UI:ZTabControl.HeaderContent>
             <TabItem Header="历史警情">
                 <Border>
-                    <TextBlock Text="TabItem1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem1" />
                 </Border>
             </TabItem>
             <TabItem Header="力量调度">
-                <Grid>
-                    
-                </Grid>
+                <Grid />
             </TabItem>
             <TabItem Header="暂存警情">
                 <Border>
-                    <TextBlock Text="TabItem3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem3" />
                 </Border>
             </TabItem>
             <TabItem Header="历史警情">
                 <Border>
-                    <TextBlock Text="TabItem1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem1" />
                 </Border>
             </TabItem>
             <TabItem Header="力量调度">
                 <Border>
-                    <TextBlock Text="TabItem2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem2" />
                 </Border>
             </TabItem>
             <TabItem Header="暂存警情">
                 <Border>
-                    <TextBlock Text="TabItem3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="TabItem3" />
                 </Border>
             </TabItem>
         </WPF.UI:ZTabControl>
 
-        <WPF.UI:ZTabControl x:Name="tabControl3" Margin="10" Type="Card">
+        <WPF.UI:ZTabControl
+            x:Name="tabControl3"
+            Margin="10"
+            Type="Card">
             <WPF.UI:ZTabControl.HeaderContent>
-                <WPF.UI:FlatButton x:Name="btnTab3AddItem" Content="增加" Type="ghost" Width="50" Height="25" Click="btnTab3AddItem_Click" />
+                <WPF.UI:FlatButton
+                    x:Name="btnTab3AddItem"
+                    Width="50"
+                    Height="25"
+                    Click="btnTab3AddItem_Click"
+                    Content="增加"
+                    Type="ghost" />
             </WPF.UI:ZTabControl.HeaderContent>
             <WPF.UI:ZTabControl.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Path x:Name="path" Fill="#657180" Width="12" Stretch="Uniform" />
-                        <TextBlock Text="{Binding Title}" Margin="5,0,0,0" />
+                        <Path
+                            x:Name="path"
+                            Width="12"
+                            Fill="#657180"
+                            Stretch="Uniform" />
+                        <TextBlock Margin="5,0,0,0" Text="{Binding Title}" />
                     </StackPanel>
                     <DataTemplate.Triggers>
                         <DataTrigger Binding="{Binding Type}" Value="1">
@@ -115,9 +169,45 @@
             </WPF.UI:ZTabControl.ItemTemplate>
             <WPF.UI:ZTabControl.ContentTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="{Binding Title}" />
                 </DataTemplate>
             </WPF.UI:ZTabControl.ContentTemplate>
         </WPF.UI:ZTabControl>
+
+        <TabControl
+            Width="300"
+            Height="200"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Foreground="Black">
+            <WPF.UI:CloseTabControl
+                Width="100"
+                Height="20"
+                Cursor="Hand"
+                Header="音乐电台">
+                <Grid Background="#aaffffff">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="音乐电台" />
+                </Grid>
+            </WPF.UI:CloseTabControl>
+            <WPF.UI:CloseTabControl
+                Width="100"
+                Height="20"
+                Cursor="Hand"
+                Header="Mv电台">
+                <Grid Background="#aaffffff">
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Mv电台" />
+                </Grid>
+            </WPF.UI:CloseTabControl>
+        </TabControl>
     </UniformGrid>
 </UserControl>

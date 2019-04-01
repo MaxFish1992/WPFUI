@@ -1,8 +1,8 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/WPF.UI;component/Resources/TooltipStyle.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/Button/Themes/Generic.xaml" />
+        <ResourceDictionary Source="/WPF.UI;component/MyControls/Button/Themes/ButtonExStyle.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/Button/Themes/PathButtonStyle.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/Button/Themes/PathTextButtonStyle.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/Button/Themes/PathIconButtonStyle.xaml" />
@@ -59,7 +59,7 @@
         <ResourceDictionary Source="/WPF.UI;component/MyControls/Alert/Themes/Generic.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/DropDownButton/Themes/Generic.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/TabControl/Themes/Generic.xaml" />
-        <ResourceDictionary Source="/WPF.UI;component/MyControls/Icon/Themes/Generic.xaml" /> 
+        <ResourceDictionary Source="/WPF.UI;component/MyControls/Icon/Themes/Generic.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/RatingBar/Themes/Generic.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/RatingBar/Themes/RatingBarButton.xaml" />
         <ResourceDictionary Source="/WPF.UI;component/MyControls/DateControl/Themes/ZCalendar.xaml" />

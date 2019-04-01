@@ -341,7 +341,7 @@
                                  Value="{Binding Path=Value,
                                                  Mode=OneWay,
                                                  ElementName=slider1}" />
-            <ZUI:FlatProgressBar Width="200" Height="10" Margin="10" BorderBrush="#C0D0DD"
+            <ZUI:FlatProgressBar Width="200" Height="10" Margin="10" BorderBrush="#C0D0DD" SnapsToDevicePixels="False"
                                  BorderThickness="1" CornerRadius="0" Foreground="#2B85E9" InnerCornerRadius="0"
                                  Maximum="100"
                                  Value="{Binding Path=Value,

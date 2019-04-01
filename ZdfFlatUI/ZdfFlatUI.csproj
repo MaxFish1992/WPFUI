@@ -163,6 +163,7 @@
     <Compile Include="MyControls\BusyIndicator\Implementation\BusyIndicatorAdorner.cs" />
     <Compile Include="MyControls\ButtonGroup\Implementation\ButtonGroup.cs" />
     <Compile Include="MyControls\ButtonGroup\Implementation\ButtonGroupItem.cs" />
+    <Compile Include="MyControls\Button\Implementation\ButtonEx.cs" />
     <Compile Include="MyControls\Button\Implementation\IconButton.cs" />
     <Compile Include="MyControls\CheckBox\Implementation\ZCheckBox.cs" />
     <Compile Include="MyControls\CheckComboBox\Implementation\CheckComboBox.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="MyControls\Primitives\ZTextBoxBase.cs" />
     <Compile Include="MyControls\SegmentControl\Implementation\SegmentControl.cs" />
     <Compile Include="MyControls\SegmentControl\Implementation\SegmentItem.cs" />
+    <Compile Include="MyControls\TabControl\Implementation\CloseTabControl.cs" />
     <Compile Include="MyControls\TextBox\Implementation\IpTextBox.cs" />
     <Compile Include="MyControls\TextBox\Implementation\NumbericTextBox.cs" />
     <Compile Include="MyControls\TextBox\Implementation\SearchBox.cs" />
@@ -323,6 +325,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyControls\ButtonGroup\Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyControls\Button\Themes\ButtonExStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -815,6 +821,7 @@
   <ItemGroup>
     <Content Include="DLL\CalcBinding.dll" />
     <Content Include="DLL\DynamicExpresso.Core.dll" />
+    <Resource Include="MyControls\TabControl\Images\close.png" />
     <Resource Include="DLL\DynamicExpresso.Core.xml" />
     <Content Include="DLL\Microsoft.Expression.Controls.dll" />
     <Content Include="DLL\Microsoft.Expression.Drawing.dll" />

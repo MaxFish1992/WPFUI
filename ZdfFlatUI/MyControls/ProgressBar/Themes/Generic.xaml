@@ -32,8 +32,8 @@
         <Setter Property="BorderBrush" Value="#D8E2FF" />
         <Setter Property="BorderThickness" Value="4" />
         <Setter Property="CornerRadius" Value="0" />
-        <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="UseLayoutRounding" Value="True" />
+        <Setter Property="SnapsToDevicePixels" Value="False" />
+        <Setter Property="UseLayoutRounding" Value="False" />
         <Setter Property="Template" Value="{StaticResource RectangleProgressBar}" />
         <!--<Style.Triggers>
             <Trigger Property="Skin" Value="Circle">
